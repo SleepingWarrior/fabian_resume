@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+:root {
+  --yellow: #f9ca24;
+  --blue: #1363df;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  /* transition: all 0.2s linear; */
+}
+
+*::selection {
+  background: var(--yellow);
+  color: #333;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #222;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+}
+
+body {
+  background: #111;
+  overflow-x: hidden;
+  padding-left: 35rem;
+}
+
+section {
+  min-height: 100vh;
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+.bio {
+  text-transform: none;
+}
+
+.btn {
+  padding: 0.7rem 4rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+
+.btn i {
+  padding: 0 0.5rem;
+  font-size: 1.8rem;
+}
+
+.btn:hover {
+  background: var(--yellow);
+}
+
+.edu-btn {
+  margin-left: 2rem;
+}
+
+.heading {
+  text-align: center;
+  margin: 0 6rem;
+  font-size: 5rem;
+  padding: 1rem;
+  border-bottom: 0.1rem solid #fff4;
+  color: #fff;
+}
+
+.heading span {
+  color: var(--yellow);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 35rem;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+
+header .user img {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 0.7rem solid var(--yellow);
+}
+
+img {
+  border: 0px;
+  outline: 0px;
+  border: 1px solid black;
+}
+
+/* header .user .name {
+  font-size: 3.5rem;
+  color: #fff;
+} */
+
+header .user .post {
+  font-size: 3rem;
+  color: #eee;
+}
+
+header .navbar {
+  width: 100%;
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 1rem 3rem;
+}
+
+header .navbar ul li a {
+  display: block;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: #333;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 5rem;
+  width: 30rem;
+}
+
+header .navbar ul li a:hover {
+  background: var(--yellow);
+}
+
+#menu {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  display: none;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0 15rem;
+}
+
+.home h3 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.home h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.home h1 span {
+  color: var(--yellow);
+}
+
+.home p {
+  font-size: 2rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+/* ------------------------------ About Section -------------------------------- */
+.about .row {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.about .row .info {
+  flex: 1 1 30rem;
+  padding: 2rem 1rem;
+  padding-left: 6rem;
+}
+
+.about .row .info h3 {
+  font-size: 2rem;
+  color: var(--yellow);
+  padding: 1rem 0;
+  font-weight: normal;
+}
+
+.about .row .info h3 span {
+  color: #eee;
+  padding: 0 0.5rem;
+}
+
+.about .row .counter {
+  flex: 1 1 48rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-box {
+  width: 25rem;
+  background: #222;
+  text-align: center;
+  padding: 2rem;
+  margin: 1rem;
+  border: solid 1px red;
+}
+
+.about-box {
+  width: 40rem;
+  height: 15rem;
+  border: solid 3px red;
+  border-radius: 10px;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  /* border: solid 1px blue; */
+  width: 50%;
+}
+
+.info {
+  /* border: solid 1px yellow; */
+  margin-top: 1rem;
+}
+
+.about-heading {
+  color: white;
+  margin-left: 1rem;
+}
+
+.projects {
+  display: flex;
+  /* border: solid 1px yellow; */
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+.about .row .counter .about-box span {
+  font-size: 4rem;
+  color: var(--yellow);
+}
+
+.about .row .counter .about-box h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* -------------------------------- Education --------------------------- */
+.education .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+  margin-bottom: 0;
+  /* border: solid 1px red; */
+}
+
+.edu-box {
+  /* border: solid 1px red; */
+  height: 15rem;
+}
+
+.education .box-container .edu-box {
+  width: 27rem;
+  margin: 3rem 1rem;
+  padding-left: 4rem;
+  border-left: 0.2rem solid #fff;
+  position: relative;
+}
+
+.education .box-container .edu-box span {
+  font-size: 1.3rem;
+  background: #222;
+  color: #fff;
+  border-radius: 5rem;
+  padding: 0.5rem 2.5rem;
+}
+
+.education .box-container .edu-box h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding-top: 1.5rem;
+}
+
+.education .box-container .edu-box p {
+  font-size: 1.4rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.education .box-container .edu-box i {
+  position: absolute;
+  top: -1.5rem;
+  left: -2.5rem;
+  height: rem;
+  width: 5rem;
+  border-radius: 50%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background: var(--yellow);
+  /* border: solid 1px red; */
+}
+
+.udemy-courses {
+  margin: 0;
+  /* border: solid 1px red; */
+}
+
+.udemy-courses ul li {
+  font-size: 2rem;
+  width: 50%;
+  text-transform: none;
+  margin: 0;
+  margin-top: 2rem;
+  /* border: solid 1px red;  */
+}
+
+.udemy-courses ul li span {
+  color: var(--blue);
+}
+
+.udemy-courses h3 {
+  margin-left: 4rem;
+  /* margin-bottom: 0; */
+  margin: 0;
+  /* border: solid 1px blue;  */
+}
+/* ------------------------- Competencies --------------------------- */
+.skills-container {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  /* border-left: 0.2rem solid #fff; */
+  border-radius: 1rem;
+  margin-left: 4rem;
+  overflow: hidden;
+  cursor: pointer;
+  /* border: solid 1px white; */
+  justify-content: left;
+}
+
+.web-skills-container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  /* border: solid 1px green; */
+}
+
+.other-skills-container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-left: 5rem;
+  /* border: solid 1px red; */
+}
+
+.web-skills-heading,
+.other-skills-heading {
+  display: block;
+  color: #fff;
+  font-size: 3rem;
+  /* border: solid 1px blue; */
+  margin-left: 4rem;
+  height: 5rem;
+  width: 100%;
+}
+
+.skills-description {
+  color: #fff;
+}
+
+.skills-list {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 1.5rem;
+  margin-right: 2rem;
+  list-style: none;
+  font-size: 2rem;
+  /* border: solid 1px var(--yellow); */
+}
+
+.skills-list li {
+  margin: 0 0 3rem 3rem;
+  font-size: 1.7rem;
+  /* background: #3333; */
+  color: #fff;
+}
+
+.skills-list li div {
+  margin-top: 1.5rem;
+}
+
+/* .portfolio .box-container .box:hover img {
+  transform: scale(1.2);
+} */
+
+/* ------------------------- Contact Me --------------------------- */
+.contact .row {
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact .row .content {
+  flex: 1 1 30rem;
+  padding: 0rem 4rem 0rem 4rem;
+}
+
+.contact .row form {
+  flex: 1 1 40rem;
+  padding: 2rem;
+  margin: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 0rem;
+  /* border: solid 0.4px gray; */
+}
+
+.contact .row form .form-box {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background: #3333;
+  color: #fff;
+  text-transform: none;
+  font-size: 1.7rem;
+  width: 50%;
+  border: 1px solid var(--blue);
+}
+
+.contact .row form .form-box::placeholder {
+  text-transform: capitalize;
+}
+
+.contact .row form .message {
+  height: 15rem;
+  resize: none;
+}
+
+form .title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2rem;
+  /* border: 1px solid blue; */
+}
+
+.contact .row .content .title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2rem;
+  padding-bottom: 0rem;
+  /* border: 1px solid red; */
+}
+
+.contact .row .content .info h3 {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: #eee;
+  padding: 1rem 0;
+  font-weight: normal;
+}
+
+.contact .row .content .info h3 i {
+  padding-right: 1rem;
+  color: var(--yellow);
+}
+
+.btn {
+  display: block;
+}
+
+.top {
+  position: fixed;
+  bottom: 7.5rem;
+  right: 2rem;
+  z-index: 100;
+  display: none;
+}
+
+.socials {
+  display: flex;
+  margin-top: 2rem;
+  height: 5rem;
+}
+
+.socials-icons i {
+  color: var(--blue);
+  margin-right: 5rem;
+  height: 5rem;
+  width: 3rem;
+  font-size: 4rem;
+  position: relative;
+}
+
+.socials-icons i:hover {
+  cursor: pointer;
+  font-size: 4.5rem;
+  color: var(--yellow);
+}
+
+/* media queries  */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    left: -120%;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  header.toggle {
+    left: 0%;
+  }
+
+  body {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    width: 100vw;
+  }
+
+  .heading {
+    margin: 0 3rem;
+  }
+
+  .about .row .counter .box {
+    width: 100%;
+  }
+
+  .education .box-container .box {
+    width: 100%;
+  }
+
+  .portfolio .box-container .box {
+    width: 100%;
+  }
+
+  .contact .row form {
+    margin: 3rem 0;
+  }
+}
+
+.info-email {
+  text-transform: none;
+}
