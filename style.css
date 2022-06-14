@@ -584,33 +584,61 @@ form .title {
   }
 
   header .navbar ul {
-    margin: 4rem;
-    /* display: flex;
-    flex-direction: column; */
-    border: 1px solid red;
+    margin: 4.5rem;
   }
 
   .heading {
-    margin: 1rem;
+    margin: 0.5rem;
+    font-size: 4.2rem;
+  }
+
+  #about-btn {
+    margin-top: 4rem;
   }
 
   .about .row .counter .box {
     width: 100%;
   }
 
+  .info {
+    padding-left: 8px;
+    /* border: 1px solid red; */
+    margin: 0rem;
+  }
+
+  .info h3 {
+    /* border: 1px solid blue; */
+    padding: 0rem;
+  }
+
   .education .box-container .box {
-    width: 100%;
+    width: 100vw;
   }
 
   .portfolio .box-container .box {
-    width: 100%;
+    width: 100vw;
   }
 
   .contact .row form {
     margin: 3rem 0;
   }
-}
 
-.info-email {
-  text-transform: none;
+  .info-email {
+    text-transform: none;
+  }
+
+  .skills-container {
+    /* border: 1px solid blue; */
+    margin-left: 0rem;
+  }
+
+  .skills-container h3 {
+    width: 100vw;
+    /* border: 1px solid red; */
+  }
+
+  .skills-container ul li {
+    width: 100vw;
+    /* border: 1px solid red; */
+  }
 }
