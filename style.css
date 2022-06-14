@@ -583,8 +583,15 @@ form .title {
     width: 100vw;
   }
 
+  header .navbar ul {
+    margin: 4rem;
+    /* display: flex;
+    flex-direction: column; */
+    border: 1px solid red;
+  }
+
   .heading {
-    margin: 0 3rem;
+    margin: 1rem;
   }
 
   .about .row .counter .box {
