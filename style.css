@@ -121,7 +121,7 @@ header .user img {
 img {
   border: 0px;
   outline: 0px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 header .user .post {
@@ -235,7 +235,7 @@ header .navbar ul li a:hover {
   text-align: center;
   padding: 2rem;
   margin: 1rem;
-  border: solid 1px red;
+  /* border: solid 1px red; */
 }
 
 .about-box {
@@ -279,13 +279,20 @@ header .navbar ul li a:hover {
 }
 
 /* -------------------------------- Education --------------------------- */
+.education {
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+}
+
 .education .box-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 1rem 0;
-  padding-left: 3rem;
+  /* padding-left: 3rem; */
+  margin-left: 4rem;
   margin-bottom: 0;
   /* border: solid 1px red; */
 }
@@ -340,6 +347,7 @@ header .navbar ul li a:hover {
 
 .udemy-courses {
   margin: 0;
+  margin-left: 4rem;
   /* border: solid 1px red; */
 }
 
@@ -358,11 +366,21 @@ header .navbar ul li a:hover {
 
 .udemy-courses h3 {
   margin-left: 4rem;
-  /* margin-bottom: 0; */
   margin: 0;
+  /* margin-bottom: 0; */
   /* border: solid 1px blue;  */
 }
+
+.edu-btn {
+  margin-left: 4.5rem;
+}
 /* ------------------------- Competencies --------------------------- */
+.competencies {
+  /* border: 1px solid blue; */
+  margin: 0;
+  padding: 0;
+}
+
 .skills-container {
   display: flex;
   /* flex-direction: column; */
@@ -398,7 +416,6 @@ header .navbar ul li a:hover {
   color: #fff;
   font-size: 3rem;
   /* border: solid 1px blue; */
-  margin-left: 4rem;
   height: 5rem;
   width: 100%;
 }
@@ -421,7 +438,7 @@ header .navbar ul li a:hover {
 }
 
 .skills-list li {
-  margin: 0 0 3rem 3rem;
+  margin: 0 0 3rem;
   font-size: 1.7rem;
   /* background: #3333; */
   /* border: solid 1px var(--yellow); */
@@ -769,9 +786,8 @@ form .title {
   body {
     padding: 0;
   }
-}
 
-/* @media (max-width: 768px) { */
+  /* @media (max-width: 768px) { */
   /* header {
     width: 100vw;
   }
@@ -958,7 +974,7 @@ form .title {
   .info-email {
     text-transform: none;
   }
-/* } */
+}
 
 /* --------------------------------------------- 400px changed to 768px Screen Size ------------------------------------- */
 @media (max-width: 768px) {
@@ -1045,6 +1061,7 @@ form .title {
   #about-info h3 {
     font-size: 1.8rem;
   }
+
   .about-box > h3 {
     margin: 0 auto;
     width: 100%;
@@ -1134,11 +1151,10 @@ form .title {
     margin-left: 2rem;
   }
   /* <------------------------------------------------- Competencies Page ------------------------------------> */
-.competencies{
-  margin-left: 0rem;
-  padding: 0rem;
-
-}
+  .competencies {
+    margin-left: 0rem;
+    padding: 0rem;
+  }
   .skills-container {
     flex-direction: column;
     height: 100vh;
