@@ -497,8 +497,8 @@ form .title {
   /* border: 1px solid red; */
 }
 
-.info-email{
- text-transform:none; 
+.info-email {
+  text-transform: none;
 }
 
 .contact .row .content .info h3 {
@@ -579,7 +579,7 @@ form .title {
 
   #about {
     height: 100%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
   }
 
   .row {
@@ -615,7 +615,7 @@ form .title {
 
   #project-list > .about-heading {
     margin: 0 auto;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
 
   .projects {
@@ -753,7 +753,25 @@ form .title {
   }
 }
 
-@media (max-width: 762px) {
+@media (max-width: 991px) {
+  header {
+    left: -120%;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  header.toggle {
+    left: 0%;
+  }
+
+  body {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
   header {
     width: 100vw;
   }
@@ -812,7 +830,7 @@ form .title {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    /* display: block; */
+    display: block;
   }
 
   #project-list > .about-heading {
@@ -945,18 +963,49 @@ form .title {
 /* --------------------------------------------- 400px Screen Size ------------------------------------- */
 @media (max-width: 400px) {
   header {
-    width: 100vw;
+    width: 100%;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    padding: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0rem;
+  }
+  .home h3 {
+    font-size: 2rem;
+    padding-top: 3rem;
+    /* border: 1px solid green; */
+  }
+
+  .home h1 {
+    font-size: 3rem;
+    /* border: 1px solid red; */
+    padding-bottom: 3rem;
+    margin: 0;
+  }
+
+  .home p {
+    /* border: 1px solid yellow; */
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0rem;
+  }
+
+  /* about me heading */
+  .heading {
+    margin: 0 0.5rem;
+    font-size: 3rem;
+    /* border: 1px solid green; */
   }
 
   header .navbar ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .heading {
-    margin: 0.5rem;
-    font-size: 4.2rem;
   }
 
   /* Landing Page */
@@ -967,14 +1016,19 @@ form .title {
   }
 
   #about-btn {
-    margin-top: 4rem;
-  }
-
-  .about .row .counter .box {
-    width: 90vw;
+    margin: 0rem;
   }
 
   /* ---------------------------------------- About Page  ------------------------------------*/
+
+  .about {
+    width: 100vw;
+    margin: 0;
+    padding: 0rem;
+  }
+  .about .row .counter .box {
+    /* border: 1px solid blue; */
+  }
   .row {
     /* border: 1px solid red; */
     display: flex;
@@ -983,11 +1037,10 @@ form .title {
 
   #about-info {
     /* border: 1px solid yellow; */
+    padding: 1rem;
     display: block;
-    padding-bottom: 10rem;
+    padding: 0rem;
     width: 100%;
-    height: 90vh;
-    padding-left: 8px;
   }
 
   .about-box > h3 {
@@ -1002,11 +1055,12 @@ form .title {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    /* display: block; */
+    display: block;
   }
 
   #project-list > .about-heading {
     margin: 0 auto;
+    padding: 1rem;
   }
 
   .projects {
@@ -1025,8 +1079,11 @@ form .title {
 
   /* -------------------------------------------- Education Page ------------------------------------------ */
 
-  .box-container {
+  .education {
     /* border: solid 1px #fff; */
+    width: 100vw;
+    margin: 0;
+    padding: 0;
   }
 
   .education .box-container .edu-box {
@@ -1053,11 +1110,27 @@ form .title {
   }
 
   .udemy-courses h3 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
+    /* border: 1px solid red; */
+    padding: 0rem 1rem;
   }
+  .udemy-courses ul {
+    margin: 0;
+    padding: 1rem;
+    width: 100vw;
+  }
+
   .udemy-courses ul li {
     /* border: 1px solid red; */
     width: 100%;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  #cv-btn {
+    margin: 0;
+    margin-left: 2rem;
   }
   /* <------------------------------------------------- Competencies Page ------------------------------------> */
 
@@ -1106,7 +1179,11 @@ form .title {
   }
 
   /* <---------------------------------------------- Contact Page -----------------------------------------> */
-
+  .contact {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+  }
   .contact .row form {
     margin: 1rem 0;
     padding-top: 0;
