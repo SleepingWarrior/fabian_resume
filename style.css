@@ -567,7 +567,7 @@ form .title {
 
 /* media queries  */
 
-@media (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1400px) {
   header .navbar ul {
     display: flex;
     flex-direction: column;
@@ -601,33 +601,30 @@ form .title {
 
   .row {
     display: flex;
-    heigth: 100%;
+    /* heigth: 100%; */
     /* flex-direction: column; */
+    /* border: 1px solid green; */
   }
 
   #about-info {
     /* border: 1px solid yellow; */
-    display: block;
-    padding-top: 50rem;
-    width: 100%;
-    height: 100vh;
-    padding-left: 8px;
+    max-width: 100%;
+    padding: 0;
+    /* height: 100vh; */
+    /* padding-left: 8px; */
   }
 
   .about-box > h3 {
     margin: 0 auto;
-
     width: 100%;
     /* border: 1px solid yellow; */
   }
 
   #project-list {
-    /* border: 1px solid blue; */
+    /* border: 1px solid red; */
     display: flex;
+    /* flex: 1; */
     flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    /* display: block; */
   }
 
   #project-list > .about-heading {
@@ -669,7 +666,7 @@ form .title {
 
   .education .box-container .edu-box {
     /* border: solid 1px red; */
-    width: 100%;
+
   }
 
   .edu-box span {
@@ -683,7 +680,7 @@ form .title {
   }
 
   .education .box-container .box {
-    width: 100vw;
+    max-width: 100vw;
   }
 
   .education .box-container .edu-box span {
@@ -701,14 +698,14 @@ form .title {
 
   .skills-container {
     flex-direction: column;
-    margin-left: 0rem;
-    height: 90vh;
+    margin-left: 4rem;
+    /* height: 90vh; */
   }
 
   .skills-list {
     /* border: 1px solid red; */
-    padding-top: 0rem;
-    width: 90%;
+    max-width: 100%;
+    /* margin-left: 4rem; */
   }
 
   .web-skills-container {
@@ -720,7 +717,7 @@ form .title {
   }
 
   .edu-btn {
-    margin: 3rem 1rem;
+    margin: 5rem;
   }
 
   .skills-container ul li {
@@ -874,8 +871,8 @@ form .title {
   }
 
   .education .box-container .edu-box {
-    /* border: solid 1px red; */
-    width: 100%;
+    border: solid 1px red;
+    max-width: 100%;
   }
 
   .edu-box span {
@@ -926,7 +923,7 @@ form .title {
   }
 
   .edu-btn {
-    margin: 3rem 1rem;
+    margin: 5rem;
   }
 
   .skills-container ul li {
@@ -1037,6 +1034,7 @@ form .title {
   /* ---------------------------------------- About Page  ------------------------------------*/
 
   .about {
+    /* border: 1px solid red; */
     width: 100vw;
     margin: 0;
     padding: 0rem;
@@ -1045,13 +1043,12 @@ form .title {
     /* border: 1px solid blue; */
   }
   .row {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
   }
 
   #about-info {
-    /* border: 1px solid yellow; */
+    border: 1px solid yellow;
     padding: 1rem;
     display: block;
     padding: 0rem;
@@ -1064,14 +1061,14 @@ form .title {
 
   .about-box > h3 {
     margin: 0 auto;
-    width: 100%;
+    max-width: 100%;
   }
 
   #project-list {
     /* border: 1px solid blue; */
     display: flex;
     flex-direction: row;
-    width: 100%;
+    max-width: 100%;
     justify-content: space-between;
     display: block;
   }
@@ -1096,7 +1093,6 @@ form .title {
   }
 
   /* -------------------------------------------- Education Page ------------------------------------------ */
-
   .education {
     /* border: solid 1px #fff; */
     width: 100vw;
@@ -1134,13 +1130,15 @@ form .title {
   }
   .udemy-courses ul {
     margin: 0;
-    padding: 1rem;
-    width: 100vw;
+    max-width: 100%;
+    /* border: 1px solid blue; */
+    /* margin-left: 4rem; */
+    max-width: 100%;
   }
 
   .udemy-courses ul li {
     /* border: 1px solid red; */
-    width: 100%;
+    max-width: 100%;
     font-size: 1.8rem;
     margin: 0;
     padding: 1rem;
@@ -1148,12 +1146,13 @@ form .title {
 
   #cv-btn {
     margin: 0;
-    margin-left: 2rem;
+    margin-left: 5rem;
   }
   /* <------------------------------------------------- Competencies Page ------------------------------------> */
   .competencies {
     margin-left: 0rem;
     padding: 0rem;
+    /* border: 1px solid red; */
   }
   .skills-container {
     flex-direction: column;
@@ -1163,8 +1162,8 @@ form .title {
 
   .skills-list {
     /* border: 1px solid blue; */
-    padding-top: 0rem;
-    width: 100%;
+    margin-left: 4rem;
+    max-width: 100%;
   }
 
   .web-skills-container {
